@@ -8,6 +8,7 @@
         INSERT INTO category_ ( name ) VALUES (#{name})
     </insert>
 
+
     <delete id="delete" parameterType="Category">
         DELETE FROM category_ WHERE id = #{id}
     </delete>
