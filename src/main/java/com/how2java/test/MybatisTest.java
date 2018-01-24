@@ -13,7 +13,7 @@ import com.how2java.pojo.Category;
 import com.how2java.util.Page;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration("classpath:applicationContext.xml")
+@ContextConfiguration("classpath*:applicationContext.xml")
 public class MybatisTest {
 
     @Autowired
@@ -26,7 +26,6 @@ public class MybatisTest {
             category.setName("new Category");
             categoryMapper.add(category);
         }
-
     }
 
     @Test

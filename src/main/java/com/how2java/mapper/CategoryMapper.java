@@ -9,11 +9,11 @@ import java.util.List;
  * Created by Hou on 2018/1/16.
  */
 public interface CategoryMapper {
-    public int add(Category category);
-    public void delete(int id);
-    public Category get(int id);
-    public int update(Category category);
-    public List<Category> list();
-    public List<Category> list(Page page);
-    public int total();
+    int add(Category category);
+    void delete(int id);
+    Category get(int id);
+    int update(Category category);
+    List<Category> list();
+    List<Category> list(Page page);
+    int total();
 }
